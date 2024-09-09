@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #fff; /* Color de fondo */
+    color: #333;               /* Color del texto */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    background-color: #fff; /* Color de fondo del header */
+    padding: 10px 0px; /* Espaciado interno del header */
+    display: flex; /* Asegura que el contenido del header esté alineado correctamente */
+    align-items: center; /* Centra verticalmente los elementos dentro del header */
+    background-image: url('.../img/banner_portfolio.jpg'); /* Ruta a tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el header */
+    background-position: center; /* Centra la imagen en el header */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    width: 100%;
+    margin-top: 10px;
+    /*background-color: #000000;*
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 100%; /* Limita el ancho máximo para un diseño más controlado */
+
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #2D2D2D; /* Color de la marca */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos del menú */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    /* Si quieres que los elementos de la lista estén en línea con el padding y el fondo aplicado */
+    display: inline-block;
+}
+
+.navbar-menu a {
+    display: block; /* Asegura que el padding y el fondo se apliquen correctamente */
+    padding: 3px 10px; /* Espaciado interno de las cajas */
+    /*background-color: #000000; /* Color de fondo de las cajas */
+    color: #0a0a0a; /* Color del texto dentro de las cajas */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100%;
+    text-align: center; /* Alinea el texto en el centro */
+    border-bottom: 1px solid black;
+}
+
+.navbar-menu a:hover {
+    background-color: #8a8a8a; /* Color al pasar el ratón */
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none; /* Ocultamos el botón del menú por defecto */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 2px;
+    background-color: #2D2D2D;
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #2D2D2D;
+    position: absolute;
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -8px;
+}
+
+.menu-icon::after {
+    top: 8px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Ocultamos el menú en pantallas pequeñas */
+        flex-direction: column;
+        width: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 60px; /* Ajusta según el tamaño de tu navbar */
+        left: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Mostramos el menú cuando está activo */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostramos el botón del menú en pantallas pequeñas */
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .navbar-menu a {
+        color: #ffffff;
+        font-size: 16px;
+    }
+}
+
+h1 {
+    color: #000000;
+    font-weight: 800;
+    text-align: center;
+    font-size: 62px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2px;
+}
+
+h4{
+    color: #000000;
+    font-weight: 800;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+
+
+h5{
+    color: #000000;
+    font-weight: 700;
+    text-align: left;
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+h6{
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+}
+
+b{
+    color: #2D2D2D;
+    font-weight: 600;
+}
+
+.presentación {
+    padding: 40px;
+    margin-top: 0px;
+    
+
+}
+
+.sobre-mi {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    padding: 10px;
+    margin-left: 20%;
+
+}
+
+.text-content {
+    max-width: 500px; /* Ajusta el tamaño máximo del área de texto */
+    margin-left: 10%;
+    text-align: left;
+}
+
+.img-mine {
+    width: 20%; /* Ajusta el tamaño de la imagen, puedes usar px, %, o em */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 2%;
+    border: 4px solid black;
+}
+
+@media (max-width: 768px) {
+    .sobre-mi {
+        flex-direction: column; /* Cambia la dirección del flujo a columna en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos al inicio del contenedor */
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+
+    .img-mine {
+        width: 60%; /* Ajusta el tamaño de la imagen a 100% del ancho del contenedor */
+        max-width: none; /* Elimina el ancho máximo para que la imagen pueda ser más grande en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .text-content {
+        max-width: 500px; /* Ajusta el tamaño máximo del área de texto */
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    h4 {
+        align-items: center;
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+        width: fit-content; /* Ajusta el ancho al contenido para centrarlo correctamente */
+    }
+
+    h5 {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+        margin: 18px auto; /* Ajusta el margen para centrar el elemento */
+        width: fit-content; /* Ajusta el ancho al contenido para centrarlo correctamente */
+        
+    }
+
+
+}
+
+.experiencia {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    padding: 0px;
+    margin-left: 20%;
+
+}
+
+.detalle-experiencia {
+    max-width: 500px; /* Ajusta el tamaño máximo del área de texto */
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 5%;
+    align-items: center;
+}
+.linea-experiencia {
+    max-width: 50%; /* Ajusta el tamaño de la imagen, puedes usar px, %, o em */
+    margin-right: 40px; /* Espacio entre la imagen y el texto */
+    margin-left: 100px;
+    margin-top: 3%;
+}
+
+
+@media (max-width: 768px) {
+    .experiencia {
+        flex-direction: column; /* Cambia la dirección del flujo a columna en pantallas pequeñas */
+        align-items: left; /* Alinea los elementos al inicio del contenedor */
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: left;
+    }
+
+    .linea-experiencia {
+            display: none; /* Oculta la imagen en pantallas pequeñas */
+    }
+
+
+    .detalle-experiencia {
+        max-width: 300px; /* Ajusta el tamaño máximo del área de texto */
+        margin-left: 0px;
+        text-align: left;
+        margin-top: 5%;
+        align-items: left;
+    }
+
+    h4, h5, p {
+        text-align: center; /* Alinea el texto a la izquierda */
+        align-items: center;
+    }
+
+
+}
+
+
+
+
+
+/* Contenedor de la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 10px; /* Espaciado interno del contenedor */
+    max-width: 71%;
+}
+
+/* Elementos de la galería */
+.gallery-item {
+    flex: 1 1 calc(25% - 5px); /* Ajusta el tamaño del elemento y el espaciado entre ellos */
+    margin: 5px; /* Espacio entre los elementos de la galería */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+}
+
+/* Imagen dentro del elemento de la galería */
+.gallery-item img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Cubre el contenedor y recorta la imagen si es necesario */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves para el efecto de zoom y sombra */
+}
+
+/* Efecto de zoom al pasar el ratón sobre la imagen */
+.gallery-item img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra sutil */
+}
+
+/* Estilos para la vista modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 10px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Contenedor de la galería */
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 10px; /* Espaciado interno del contenedor */
+    max-width: 71%;
+}
+
+/* Elementos de la galería */
+.video-item {
+    flex: 1 1 calc(25% - 10px); /* Ajusta el tamaño del elemento y el espaciado entre ellos */
+    margin: 5px; /* Espacio entre los elementos de la galería */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+    overflow: hidden; /* Asegura que la miniatura no se desborde del contenedor */
+}
+
+/* Miniatura dentro del elemento de la galería */
+.video-item img {
+    width: 100%; /* Ajusta la miniatura al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la miniatura */
+    object-fit: cover; /* Cubre el contenedor y recorta la miniatura si es necesario */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves para el efecto de zoom y sombra */
+}
+
+/* Efecto de zoom al pasar el ratón sobre la miniatura */
+.video-item img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la miniatura ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra sutil */
+}
+
+/* Estilos para la vista modal (opcional, si decides usar modal para los videos) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 10px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .gallery-item, .video-item {
+        flex: 1 1 calc(50% - 10px); /* Dos elementos por fila en pantallas más pequeñas */
+    }
+
+}
+
+
+.habilidades {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    padding: 0px;
+    margin-left: 20%;
+
+}
+
+.text-content-3 {
+    max-width: 100%; /* Ajusta el tamaño máximo del área de texto */
+    margin-left: 0%;
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .habilidades {
+        flex-direction: column; /* Cambia la dirección del flujo a columna en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos al inicio del contenedor */
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+
+
+    .text-content-3 {
+        max-width: 300px; /* Ajusta el tamaño máximo del área de texto */
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    h4 {
+        align-items: center;
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+        width: fit-content; /* Ajusta el ancho al contenido para centrarlo correctamente */
+    }
+
+    h5 {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+        margin: 18px auto; /* Ajusta el margen para centrar el elemento */
+        width: fit-content; /* Ajusta el ancho al contenido para centrarlo correctamente */
+        
+    }
+
+
+}
+
+.gracias {
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    padding: 0px;
+
+}
+
+@media (max-width: 768px) {
+    .gracias {
+        flex-direction: column; /* Cambia la dirección del flujo a columna en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos al inicio del contenedor */
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+
+
+   h6 {
+        max-width: 460px; /* Ajusta el tamaño máximo del área de texto */
+        margin-left: 0%;
+        text-align: center;
+        align-items: center;
+        width: fit-content;
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+        margin: 18px auto; /* Ajusta el margen para centrar el elemento */
+        width: fit-content;
+        font-size: 18px;
+    }
+
+
+
+
+}
+
+
+.icons-contactame {
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos en fila */
+    justify-content: center; /* Centra los íconos en el footer */
+    gap: 20px; /* Espacio entre los íconos */
+    margin-right: 20px;
+}
+
+.icons-contactame li {
+    display: inline-block;
+}
+
+.icons-contactame img {
+    width: 65px; /* Ajusta el tamaño del ícono */
+    transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
+}
+
+.icons-contactame img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el ratón */
+}
+
+
+
+
+footer{
+    background-color: #000000;
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    margin-top: 5%;
+}
+
+.piecito {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    margin-left: 0%;
+    margin-right: 0%;
+    gap: 60%;
+    align-items: baseline;
+
+}
+
+.img-nombre {
+    width: 190px; /* Ajusta el tamaño de la imagen, puedes usar px, %, o em */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-left: 60px;
+    align-items: left;
+    margin-top: 30px;
+}
+
+.img-icons {
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos en fila */
+    justify-content: right; /* Centra los íconos en el footer */
+    gap: 10px; /* Espacio entre los íconos */
+    margin-right: 0%;
+}
+
+.img-icons li {
+    display: inline-block;
+}
+
+.img-icons img {
+    width: 45px; /* Ajusta el tamaño del ícono */
+    transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
+}
+
+.img-icons img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el ratón */
+}
+
+.copyright {
+    margin-top: 60px;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+    .piecito {
+        flex-direction: column; /* Cambia la dirección del flujo a columna en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos al inicio del contenedor */
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+
+    .img-nombre {
+        max-width: 500px; /* Elimina el ancho máximo para que la imagen pueda ser más grande en pantallas pequeñas */
+        margin-bottom: 20px;
+        margin-top: 0%;
+        align-items: center;
+        margin-left: 0%;
+    }
+
+    .imag-icons {
+        margin-top: 10%;
+        max-width: 500px; /* Ajusta el tamaño máximo del área de texto */
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición desde el borde inferior */
+    right: 20px;  /* Ajusta la posición desde el borde derecho */
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000000; /* Color del texto del botón */
+    border: 2px solid #000000;
+    border-radius: 50%; /* Botón circular */
+    width: 50px; /* Tamaño del botón */
+    height: 50px; /* Tamaño del botón */
+    font-size: 24px; /* Tamaño de la flecha */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#scroll-to-top:hover {
+    background-color: #adadad; /* Color de fondo al pasar el ratón */
+}
+
+/* Mostrar el botón solo cuando se hace scroll */
+#scroll-to-top.show {
+    opacity: 1;
+}
