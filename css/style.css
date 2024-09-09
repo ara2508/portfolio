@@ -142,10 +142,20 @@ body {
     }
 }
 
+.presentación {
+    justify-content: center; 
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    
+
+}
+
 h1 {
     color: #000000;
     font-weight: 800;
-    text-align: centert;
+    text-align: center;
     font-size: 98px;
     margin-bottom: 5px;
     margin-top: 20px;
@@ -200,15 +210,7 @@ b{
     font-weight: 600;
 }
 
-.presentación {
-    justify-content: center; 
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: center;
-    
 
-}
 
 .sobre-mi {
     display: flex;
