@@ -201,8 +201,11 @@ b{
 }
 
 .presentación {
-    padding: 40px;
-    margin-top: 0px;
+    justify-content: center; 
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
     
 
 }
@@ -216,50 +219,50 @@ b{
 }
 
 .text-content {
-    max-width: 500px; /* Ajusta el tamaño máximo del área de texto */
+    max-width: 500px; 
     margin-left: 10%;
     text-align: left;
 }
 
 .img-mine {
-    width: 20%; /* Ajusta el tamaño de la imagen, puedes usar px, %, o em */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 20%; 
+    height: auto;
+    margin-right: 20px; 
     margin-left: 2%;
     border: 4px solid black;
 }
 
 @media (max-width: 768px) {
     .sobre-mi {
-        flex-direction: column; /* Cambia la dirección del flujo a columna en pantallas pequeñas */
-        align-items: center; /* Alinea los elementos al inicio del contenedor */
+        flex-direction: column;
+        align-items: center; 
         margin-left: 0%;
         margin-right: 0%;
         text-align: center;
     }
 
     .img-mine {
-        width: 60%; /* Ajusta el tamaño de la imagen a 100% del ancho del contenedor */
-        max-width: none; /* Elimina el ancho máximo para que la imagen pueda ser más grande en pantallas pequeñas */
+        width: 60%;
+        max-width: none;
         align-items: center;
     }
 
     .text-content {
-        max-width: 500px; /* Ajusta el tamaño máximo del área de texto */
+        max-width: 500px; 
         margin-left: 0%;
         text-align: center;
     }
 
     h4 {
         align-items: center;
-        text-align: center; /* Centra el texto en pantallas pequeñas */
-        width: fit-content; /* Ajusta el ancho al contenido para centrarlo correctamente */
+        text-align: center; 
+        width: fit-content; 
     }
 
     h5 {
-        text-align: center; /* Centra el texto en pantallas pequeñas */
-        margin: 18px auto; /* Ajusta el margen para centrar el elemento */
-        width: fit-content; /* Ajusta el ancho al contenido para centrarlo correctamente */
+        text-align: center; 
+        margin: 18px auto; 
+        width: fit-content; 
         
     }
 
@@ -268,22 +271,22 @@ b{
 
 .experiencia {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    align-items: center; 
     padding: 0px;
     margin-left: 20%;
 
 }
 
 .detalle-experiencia {
-    max-width: 500px; /* Ajusta el tamaño máximo del área de texto */
+    max-width: 500px; 
     margin-left: 10%;
     text-align: left;
     margin-top: 5%;
     align-items: center;
 }
 .linea-experiencia {
-    max-width: 50%; /* Ajusta el tamaño de la imagen, puedes usar px, %, o em */
-    margin-right: 40px; /* Espacio entre la imagen y el texto */
+    max-width: 50%; 
+    margin-right: 40px; 
     margin-left: 100px;
     margin-top: 3%;
 }
@@ -291,20 +294,20 @@ b{
 
 @media (max-width: 768px) {
     .experiencia {
-        flex-direction: column; /* Cambia la dirección del flujo a columna en pantallas pequeñas */
-        align-items: left; /* Alinea los elementos al inicio del contenedor */
+        flex-direction: column; 
+        align-items: left; 
         margin-left: 0%;
         margin-right: 0%;
         text-align: left;
     }
 
     .linea-experiencia {
-            display: none; /* Oculta la imagen en pantallas pequeñas */
+            display: none; 
     }
 
 
     .detalle-experiencia {
-        max-width: 300px; /* Ajusta el tamaño máximo del área de texto */
+        max-width: 300px;
         margin-left: 0px;
         text-align: left;
         margin-top: 5%;
@@ -312,7 +315,7 @@ b{
     }
 
     h4, h5, p {
-        text-align: center; /* Alinea el texto a la izquierda */
+        text-align: center; 
         align-items: center;
     }
 
@@ -327,32 +330,32 @@ b{
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Espacio entre los elementos */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 10px; /* Espaciado interno del contenedor */
+    justify-content: space-between; 
+    margin: 0 auto; 
+    padding: 10px; 
     max-width: 71%;
 }
 
 /* Elementos de la galería */
 .gallery-item {
-    flex: 1 1 calc(25% - 5px); /* Ajusta el tamaño del elemento y el espaciado entre ellos */
-    margin: 5px; /* Espacio entre los elementos de la galería */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
-    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+    flex: 1 1 calc(25% - 5px); 
+    margin: 5px; 
+    cursor: pointer; 
+    overflow: hidden; 
 }
 
 /* Imagen dentro del elemento de la galería */
 .gallery-item img {
-    width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Cubre el contenedor y recorta la imagen si es necesario */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves para el efecto de zoom y sombra */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
 
 /* Efecto de zoom al pasar el ratón sobre la imagen */
 .gallery-item img:hover {
-    transform: scale(1.05); /* Aumenta el tamaño de la imagen ligeramente */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra sutil */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 /* Estilos para la vista modal */
