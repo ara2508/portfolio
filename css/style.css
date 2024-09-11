@@ -708,9 +708,10 @@ html {
 }
 
 
+
 body {
-  --sb-track-color: #3c3c3c;
-  --sb-thumb-color: #ffffff;
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #000000;
   --sb-size: 10px;
 }
 
