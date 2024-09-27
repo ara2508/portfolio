@@ -234,7 +234,7 @@ b{
     height: auto;
     margin-right: 20px; 
     margin-left: 2%;
-    border: 4px solid black;
+    border: 4px solid #203d3f;
 }
 
 @media (max-width: 768px) {
@@ -586,12 +586,12 @@ b{
 
 
 footer{
-    background-color: #000000;
+    background-color: #203d3f;
     width: 100%;
     height: 40vh;
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #aad1be;
     margin-top: 5%;
 }
 
