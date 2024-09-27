@@ -67,8 +67,8 @@ body {
 .navbar-menu a {
     display: block; 
     padding: 3px 10px; 
-    background-color: #aad1be;
-    color: #203d3f; 
+    background-color: #203d3f; 
+    color: #fbe0fc;
     text-decoration: none;
     font-size: 14px;
     font-weight: 100%;
@@ -76,8 +76,8 @@ body {
 }
 
 .navbar-menu a:hover {
-    background-color: #203d3f; 
-    color: #fbe0fc;
+    background-color: #aad1be;
+    color: #203d3f; 
 }
 
 .menu-toggle {
